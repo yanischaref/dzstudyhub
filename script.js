@@ -1,4 +1,4 @@
 /*script.js*/
 
-
+function rungetstarted() {};
 

@@ -19,13 +19,6 @@ header {
     justify-content: space-between;
 }
 
-#logo-h {
-    background-color: white;
-    font-size: 2.5rem;
-    min-width: 250px;
-    text-align: center;
-}
-
 #logo-a {
     margin: 15px;
     display: block;
@@ -37,7 +30,6 @@ header {
     border-radius: 2.5rem;
     font-size: 2.5rem;
     min-width: 250px;
-    text-align: center;
 }
 
 #logo-a:hover {
