@@ -3,6 +3,7 @@
 body {
     font-family: 'Patrick Hand', cursive;
     margin: 0;
+    background-color: rgb(198, 237, 238);
 }
 
 header {
@@ -69,10 +70,49 @@ header {
 
 /*meet section*/
 
-#lets-meet {
+#skiils-test {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    flex-direction: row;
+    justify-content: center;
     height: 100vh;
-    text-align: center;
+}
+
+#skls-tst-texts {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+#skiils-test-start-button {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 50%;
+    font-size: 4rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'Patrick Hand', cursive;
+    background-color: brown;
+    color: white;
+    align-self: center;
+}
+
+#skiils-test-start-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#skiils-test-start-button:active {
+    background-color: black;
+}
+
+#test-par {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    color: rgb(101, 100, 100);
+}
+
+#learn-img-1 {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
 }
