@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/getstarted-syles/getstarted-light-style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="getstarted-background"></div>
     <div id="getstarted-main">
-        <h1>Hello threr</h1>
+        <div class="getstarted-questions">
+            <h1 id="question-header">1/5 Choose a language</h1>
+            <div class="all-answers-box">
+                <div id="question-1" class="all-answers-box-input">
+                    <div class="answer-box" id="answer-1-box-1" onclick="changeLang(1)"><img src="../graphics/icons/usa-flag.jpg" alt="USA flag" class="lang-flags"><h1>English</h1></div>
+                    <div class="answer-box" id="answer-1-box-2" onclick="changeLang(2)"><img src="../graphics/icons/ksa-flag.jpg" alt="KSA flag" class="lang-flags"><h1>العربية</h1></div>
+                    <div class="answer-box" id="answer-1-box-3" onclick="changeLang(3)"><img src="../graphics/icons/france-flag.jpg" alt="France flag" class="lang-flags"><h1>Français</h1></div>
+                </div>
+                <div id="question-2" class="all-answers-box-input" style="display: none;">
+                    <div class="answer-box" id="answer-2-box-1" onclick="setLevel(1)"><img src="../graphics/icons/primary-student-icon.png" alt="Primary school kid" class="level-student-icon"><h1>Primary School</h1></div>
+                    <div class="answer-box" id="answer-2-box-2" onclick="setLevel(2)"><img src="../graphics/icons/midschool-student-icon.png" alt="Middle school kid" class="level-student-icon"><h1>Middle School</h1></div>
+                    <div class="answer-box" id="answer-2-box-3" onclick="setLevel(3)"><img src="../graphics/icons/highschool-pupil-icon.png" alt="High school teen" class="level-student-icon"><h1>High School</h1></div>
+                </div>
+                <div id="question-3" class="all-answers-box-input" style="display: none;">
+                    <div class="answer-box" id="answer-3-box-1" onclick="fucntion(1)"><h1>mild School</h1></div>
+                    <div class="answer-box" id="answer-3-box-2" onclick="fucntion(2)"><h1>coffe School</h1></div>
+                    <div class="answer-box" id="answer-3-box-3" onclick="fucntion(3)"><h1>tea School</h1></div>
+                </div>
+                <div id="question-4" class="all-answers-box-input" style="display: none;">
+                    <div class="answer-box" id="answer-4-box-1" onclick="fucntion(1)"><h1>USAME School</h1></div>
+                    <div class="answer-box" id="answer-4-box-2" onclick="fucntion(2)"><h1>JSK School</h1></div>
+                    <div class="answer-box" id="answer-4-box-3" onclick="fucntion(3)"><h1>MCA School</h1></div>
+                </div>
+                <div id="question-5" class="all-answers-box-input" style="display: none;">
+                    <div class="answer-box" id="answer-5-box-1" onclick="fucntion(1)"><h1>Python School</h1></div>
+                    <div class="answer-box" id="answer-5-box-2" onclick="fucntion(2)"><h1>C++ School</h1></div>
+                    <div class="answer-box" id="answer-5-box-3" onclick="fucntion(3)"><h1>JavaScript School</h1></div>
+                </div>
+
+                <h1 id="answer-output-header">You choosed: </h1>
+            </div>
+            <div id="getstarted-submit-buttons">
+                <button id="getstarted-return-button" onclick="changeQuestion(-1)">Return</button>
+                <button id="getstarted-next-button" onclick="changeQuestion(1)">Next</button>
+            </div>
+        </div>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>

@@ -1,0 +1,141 @@
+/*getstarted*/
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#getstarted-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(198, 237, 238);
+    z-index: -1;
+}
+
+#getstarted-main {
+    display: flex;
+    align-self: center;
+    background-color: burlywood;
+    width: 60%;
+    height: 80%;
+    border-radius: 2.5rem;
+    box-shadow: 0 0 10px 10px rgb(58, 58, 58);
+    justify-content: center;
+}
+
+.getstarted-questions {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question-header {
+    font-size: 3rem;
+}
+
+
+.all-answers-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 60%;
+    margin: 10px;
+    background-color: rgb(239, 147, 27);
+    border-radius: 2rem;
+}
+
+.all-answers-box-input {
+    width: 100%;
+    height: 75%;
+    background-color: rgb(239, 147, 27);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.answer-box {
+    margin: 10px;
+    background-color: rgb(196, 193, 193);
+    border-radius: 1rem;
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+
+.answer-box:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.answer-box:active {
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: black;
+}
+
+.lang-flags {
+    border-radius: .5rem;
+    width: 50px;
+    height: 30px;
+}
+
+.answer-output-header {
+    font-size: 3rem;
+}
+
+#getstarted-submit-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#getstarted-next-button {
+    margin: 30px;
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3rem;
+    background-color: rgb(208, 208, 208);
+    opacity: 0.3;
+}
+
+#getstarted-return-button {
+    margin: 30px;
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3rem;
+}
+#getstarted-next-button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#getstarted-next-button:active {
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: red;
+    color: white;
+}
+
+#getstarted-return-button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#getstarted-return-button:active {
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: black;
+    color: white;
+}
